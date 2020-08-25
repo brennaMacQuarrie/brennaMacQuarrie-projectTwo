@@ -1,0 +1,78 @@
+header.index {
+    background-image: url(../../bar-final-assets/home-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    object-fit: cover;
+    height: 80vh;
+    
+    .siteTitle {
+        position: relative;
+    }
+    img {
+        width: 70%;
+        position: absolute;
+        bottom: -300px;
+        right: -150px;
+        z-index: 9;
+    }
+    h1 {
+        font-family: 'Tulpen One', cursive;
+        font-size: 261.4px;
+        color: #FF8327;
+        text-align: center;
+        line-height: 70%;
+        padding-top: 10%;
+        z-index: 10;
+    }
+    h2 {
+        color: white;
+        font-size: 83.2px;
+        line-height: 50%;
+        text-align: center;
+        z-index: 10;
+    }
+}
+
+header.contactPage {
+    background-image: url(../../bar-final-assets/contact-header-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    h1 {
+        color: white;
+        font-size: 83.2px;
+        // HOW TO CENTER THIS ON Y AXIS
+    }
+}
+
+header .navTop {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    a,
+    p {
+        color: white;
+        padding: 0 30px;
+        margin: 20px 5px;
+    }
+    p {
+        font-size: 60px;
+        font-family: 'Tulpen One', cursive;
+    }    
+    a {
+        font-size: 40px;
+    }
+    a:hover,
+    a:focus {
+        color: #FF8327;
+        transform: scale(1.2);    }
+}
+
+
+header.blogHeader {
+    background-image: url(../../bar-final-assets/blog-header-1.jpg);
+}

@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Chathura', sans-serif;    
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1, h2, h3 {
+    margin: 0;
+    letter-spacing: 2.6px;
+}
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: calc(3rem + 2vw);
+}
+h3 {
+    font-size: calc(2.5rem + 1.5vw);
+}
+p {
+    font-size: calc(2rem + 1vw);
+    line-height: 80%;
+    margin: 0;
+}
