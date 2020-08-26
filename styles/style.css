@@ -348,18 +348,6 @@ header.index img {
   z-index: 1;
 }
 
-header.contactPage {
-  background-image: url(../../bar-final-assets/contact-header-1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-}
-
-header.contactPage h1 {
-  color: white;
-  font-size: 83.2px;
-}
-
 header .navTop ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +362,7 @@ header .navTop ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 90px;
 }
 
 header .navTop a,
@@ -397,6 +386,36 @@ header .navTop a:focus {
   color: #FF8327;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+header.contactHeader {
+  background-image: url(../../bar-final-assets/contact-header-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+header.contactHeader div.wrapper {
+  height: 100%;
+}
+
+header.contactHeader .contactTitle {
+  height: calc(60vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.contactHeader .contactTitle h1 {
+  color: white;
+  font-size: 83.2px;
 }
 
 header.blogHeader {
@@ -531,6 +550,13 @@ header.blogHeader {
   width: 120px;
 }
 
+.formButton {
+  border: none;
+  font-family: 'Tulpen One', cursive;
+  width: 90%;
+  margin: 20px auto;
+}
+
 .hostaParty {
   background-color: #111010;
   color: white;
@@ -610,11 +636,95 @@ header.blogHeader {
   color: white;
 }
 
+.contactMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactMain .contact {
+  letter-spacing: 2.6px;
+}
+
+.contactMain .contact .socials {
+  margin-top: 100px;
+  width: 50%;
+}
+
+.contactMain .contact .socials .contactFavis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
+.contactMain .contact .contactInfo {
+  margin-top: 30px;
+}
+
+.contactMain .form {
+  width: 70%;
+  height: 500px;
+  background-color: #220303;
+  position: relative;
+  top: -120px;
+  right: -50px;
+  -webkit-box-shadow: #FF8327 10px 10px;
+          box-shadow: #FF8327 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactMain .form input[type=text],
+.contactMain .form input[type=email],
+.contactMain .form textarea {
+  background-color: #220303;
+  font-family: 'Chathura', sans-serif;
+  color: white;
+  font-size: calc(2rem + 1vw);
+}
+
+.contactMain .form input[type=text],
+.contactMain .form input[type=email] {
+  width: 45%;
+  border: none;
+  border-bottom: 1px white solid;
+  color: white;
+}
+
+.contactMain .form textarea {
+  width: 90%;
+  border: none;
+  border: 1px white solid;
+  text-align: center;
+  margin-top: 30px;
+}
+
 footer {
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: #585858;
   text-align: center;
+  margin: 0;
+}
+
+footer p {
+  font-size: calc(1.6rem + 0.8vw);
 }
 
 /* Portrait tablet and small desktops */

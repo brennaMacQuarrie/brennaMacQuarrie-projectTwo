@@ -10,7 +10,6 @@ header.index {
         display: flex;
         flex-direction: column;
         position: relative;
-
         // border: 1px green solid;
     }
     .siteTitle {
@@ -45,17 +44,6 @@ header.index {
     }
 }
 
-header.contactPage {
-    background-image: url(../../bar-final-assets/contact-header-1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 60vh;
-    h1 {
-        color: white;
-        font-size: 83.2px;
-        // HOW TO CENTER THIS ON Y AXIS
-    }
-}
 
 header .navTop {
     ul {
@@ -63,6 +51,7 @@ header .navTop {
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
+        height: 90px;
     }
     a,
     p {
@@ -81,8 +70,27 @@ header .navTop {
     a:focus {
         color: #FF8327;
         transform: scale(1.2);    }
-}
-
+    }
+    
+    header.contactHeader {
+        background-image: url(../../bar-final-assets/contact-header-1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        div.wrapper {
+            height: 100%;
+        }
+        .contactTitle {
+            height: calc(60vh - 90px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                color: white;
+                font-size: 83.2px;
+            }
+        }
+    }
 
 header.blogHeader {
     background-image: url(../../bar-final-assets/blog-header-1.jpg);

@@ -81,6 +81,13 @@
     width: 120px;
 }
 
+.formButton {
+    border: none;
+    font-family: 'Tulpen One', cursive;
+    width: 90%;
+    margin: 20px auto;
+}
+
 .hostaParty {
     background-color: #111010;
     color: white;
@@ -136,5 +143,62 @@
     height: 60vh;
     background-color: rgb(26, 26, 26);
     color: white;
-}
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact {
+        letter-spacing: 2.6px;
+        .socials {
+            margin-top: 100px;
+            width: 50%;
+            .contactFavis {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+            }
+        }
 
+        .contactInfo {
+            margin-top: 30px;
+        }
+    }
+    .form {
+        width: 70%;
+        height: 500px;
+        background-color: #220303;
+        position: relative;
+        top: -120px;
+        right: -50px;
+        box-shadow: #FF8327 10px 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            background-color: #220303;
+            font-family: 'Chathura', sans-serif;    
+            color: white;
+            font-size: calc(2rem + 1vw);
+        }
+        input[type=text],
+        input[type=email] {
+            width: 45%;
+            border: none;
+            border-bottom: 1px white solid;
+            color: white;
+
+        }
+        textarea {
+            width: 90%;  
+            border: none;
+            border: 1px white solid;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}

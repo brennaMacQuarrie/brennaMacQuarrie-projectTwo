@@ -1,6 +1,11 @@
 footer {
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: rgb(88, 88, 88);
     text-align: center;
+    margin: 0;
+    p {
+        font-size: calc(1.6rem + 0.8vw);
+
+    }
 }
