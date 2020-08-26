@@ -174,31 +174,131 @@
 
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
-
+        justify-content: center;
+        padding: 30px;
         input[type=text],
         input[type=email],
         textarea {
             background-color: #220303;
             font-family: 'Chathura', sans-serif;    
+            border: none;
             color: white;
             font-size: calc(2rem + 1vw);
         }
         input[type=text],
         input[type=email] {
             width: 45%;
-            border: none;
             border-bottom: 1px white solid;
             color: white;
-
         }
         textarea {
-            width: 90%;  
-            border: none;
+            width: calc(100% - 60px);  
+            height: 35vh;
             border: 1px white solid;
-            text-align: center;
             margin-top: 30px;
+        }
+    }
+}
+
+.blogFullPage {
+    background-color: rgb(26, 26, 26);
+    aside {
+        float: left;
+        margin: 5% 3%;
+        padding: 20px 5px;
+        width: 20%;
+        background-color: #220303;
+        color: white;
+        text-align: left;
+        h2 {
+            font-size: calc(2.5rem + 1.5vw);
+        }
+        p {
+            font-size: calc(1.5rem + 1vw);
+        }
+        a {
+            color: #FF8327;
+            font-size: calc(1.5rem + 1vw);
+        }
+        img {
+            position: relative;
+            width: 120%;
+            left: -50px;
+            top: -30px;
+        }
+        ul {
+            list-style: disc inside;
+        }
+    }
+    .blogMain {
+        width: 70%;
+        color: white;
+        img {
+            display: relative;
+            left: -15px;
+            box-shadow: -15px 15px #FF8327;
+        }
+        .newMenu {
+            border-left: 5px solid #FF8327;
+            border-bottom: 5px solid #FF8327;
+            padding: 50px;
+            h3 {
+                color: #FF8327;
+            }
+        }
+    }
+
+    .commentSection {
+        color: white;
+        padding: 50px;
+        img {
+            width: 100px;
+            // padding: 10px;
+        }
+        .comment {
+            display: flex;
+            padding: 30px;
+            div {
+                width: 60%;
+                padding-left: 20px;
+                h3 {
+                    color: #FF8327;
+                    line-height: 80%;
+                }
+            }
+        }
+        .leaveaComment {
+            form {
+                height: 400px;
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                input[type=text],
+                input[type=email],
+                textarea {
+                    background-color: rgb(26, 26, 26);
+
+                    font-family: 'Chathura', sans-serif;    
+                    border: none;
+                    color: white;
+                    font-size: calc(2rem + 1vw);
+                }
+                input[type=text],
+                input[type=email] {
+                    width: 45%;
+                    border-bottom: 1px #FF8327 solid;
+                    color: white;
+                }
+                textarea {
+                    width: calc(100% - 60px);  
+                    height: 35vh;
+                    border: 1px #FF8327 solid;
+                    margin-top: 30px;
+                }
+            }
         }
     }
 }

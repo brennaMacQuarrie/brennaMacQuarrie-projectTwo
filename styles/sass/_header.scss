@@ -72,26 +72,38 @@ header .navTop {
         transform: scale(1.2);    }
     }
     
-    header.contactHeader {
-        background-image: url(../../bar-final-assets/contact-header-1.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 60vh;
-        div.wrapper {
-            height: 100%;
-        }
-        .contactTitle {
-            height: calc(60vh - 90px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h1 {
-                color: white;
-                font-size: 83.2px;
-            }
-        }
+header.contactHeader {
+    background-image: url(../../bar-final-assets/contact-header-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    div.wrapper {
+        height: 100%;
     }
+    .contactTitle {
+        height: calc(60vh - 90px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: calc(3rem + 2vw);
+        color: white;
+    }
+}
 
 header.blogHeader {
     background-image: url(../../bar-final-assets/blog-header-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    div.wrapper {
+        height: 100%;
+    }
+    .blogTitle {
+        height: calc(60vh - 90px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: calc(3rem + 2vw);
+        color: white;
+    }
 }

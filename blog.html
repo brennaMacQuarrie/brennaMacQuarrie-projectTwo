@@ -12,27 +12,57 @@
     <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <a class="skipButton" href="#maincontent">skip to main content.</a>
-    
-        <header class="blogHeader">
-            <div class="wrapper">
-                <nav class="navTop">
-                    <ul>
-                        <a href="./index.html" target="_parent">Home</a>
-                        <a href="#about">About</a>
-                        <p class="logo">Bar-One</p>
-                        <a href="#blog">Blog</a>
-                        <a href="./contact.html" target="_parent">Contact</a>
-                    </ul>
-                </nav>
+    <a class="skipButton" href="#maincontent">skip to main content.</a>
+
+    <header class="blogHeader">
+        <div class="wrapper">
+            <nav class="navTop">
+                <ul>
+                    <a href="./index.html" target="_parent">Home</a>
+                    <a href="#about">About</a>
+                    <p class="logo">Bar-One</p>
+                    <a href="#blog">Blog</a>
+                    <a href="./contact.html" target="_parent">Contact</a>
+                </ul>
+            </nav>
+            <div class="blogTitle">
                 <h1>Blog</h1>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main id="maincontent">
-            <section class="wrapper">
-                <div class="blogMain">
-                    <img src="./bar-final-assets/post-image.jpg" alt="four dishes of colorful food spread out across a shiny black table.">
+    <main id="maincontent" class="blogFullPage">
+        <aside>
+            <!-- <div class="wrapper"> -->
+            <div class="asideText wrapper">
+                <img src="./bar-final-assets/sidebar-image.jpg" alt="a pint of beer being poured from a collection of taps.">
+                <h2>Our mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis obcaecati recusandae eligendi?</p>
+                <a href="#">Find out more.</a>
+        
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor elit.</p>
+                    </li>
+                    <li>
+                        <p>amet consectetur adipisicing</p>
+                    </li>
+                    <li>
+                        <p>Impedit adipisci praesentium?</p>
+                    </li>
+                    <li>
+                        <p>tenetur quod fugiat sed</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </aside>
+        
+        <section class="wrapper">
+            <div class="blogMain">
+                <img src="./bar-final-assets/post-image.jpg" alt="four dishes of colorful food spread out across a shiny black table.">
+                <div class="newMenu">
                     <h2>New menu!</h2>
                     <h3>Monday January 30, 2019 by Saron</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto totam velit hic doloremque ex beatae consequuntur, praesentium nisi, nihil reprehenderit blanditiis ullam eos explicabo necessitatibus.</p>
@@ -40,50 +70,46 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rem veritatis ea at, distinctio doloremque expedita sapiente praesentium, nobis, doloribus perspiciatis amet qui unde sed nostrum sint a maxime enim. Aliquid dolorem expedita ducimus dolor harum iure eaque architecto ex, dicta consequuntur exercitationem repudiandae, sequi veritatis nulla libero voluptatibus eos neque ipsa modi vero non. Beatae debitis eum unde quo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta voluptatem doloremque itaque voluptatibus ullam dolor, sed sit quo. Saepe!</p>
                 </div>
+            </div>
 
-                <div class="commentSection">
-                    <h2>Comments:</h2>
-                    <div class="commentOne">
-                        <img src="./bar-final-assets/comment-image-1.jpg" alt="a profile of a young woman in a white sleeveless top">
+            <div class="commentSection">
+                <h2>Comments:</h2>
+                <div class="comment">
+                    <img src="./bar-final-assets/comment-image-1.jpg" alt="a profile of a young woman in a white sleeveless top">
+                    <div>
                         <h3>Tuesday October 9th, 2019 by Sulaire</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga atque ipsum ratione? Atque illo asperiores corrupti quod ab voluptatem quis a ipsam. Atque facilis, eaque omnis ipsam provident asperiores.</p>
                     </div>
-                    <div class="commentTwo">
-                        <img src="./bar-final-assets/comment-image-2.jpg" alt="a brooding young male with a beard.">
+                </div>
+                <div class="comment">
+                    <img src="./bar-final-assets/comment-image-2.jpg" alt="a brooding young male with a beard.">
+                    <div>
                         <h3>Wednesday October 10th, 2020 by Renzo</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla eius sapiente obcaecati a, quas nobis neque dolore necessitatibus ipsa ut consequatur voluptatum, earum sint. Minima?</p>
                     </div>
-                    
+                </div>
+                
+                <div class="leaveaComment">
                     <form action="">
-                        <!-- build form here -->
+                        <!-- NAME -->
+                        <label class="sr-only" for="firstName">Name</label>
+                        <input type="text" name="firstName" placeholder="Name" id="firstName">
+                        <!-- EMAIL -->
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        
+                        <textarea name="specialInstructions" id="specialInstructions" placeholder="Message">
+                        Message</textarea>
+                        <button class="readMore formButton">Submit</button>
                     </form>
                 </div>
 
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <aside>
-                <!-- <div class="wrapper"> -->
-                    <div class="asideText wrapper">
-                        <img src="./bar-final-assets/sidebar-image.jpg" alt="a pint of beer being poured from a collection of taps.">
-                        <h2>Our mission</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis obcaecati recusandae eligendi?</p>
-                        <a href="#">Find out more.</a>
-
-                        <h2>Recent Posts</h2>
-                        <ul>
-                            <li><p>Lorem ipsum dolor elit.</p></li>
-                            <li><p>amet consectetur adipisicing</p></li>
-                            <li><p>Impedit adipisci praesentium?</p></li>
-                            <li><p>tenetur quod fugiat sed</p></li>
-                        </ul>
-                    </div>
-                <!-- </div> -->
-            </aside>
-
-        </main>
-
-        <footer>
-            <p>Copyright &copy; 2020 Juno College</p>
-        </footer>
+    <footer>
+        <p>Copyright &copy; 2020 Juno College</p>
+    </footer>
 </body>
 </html>

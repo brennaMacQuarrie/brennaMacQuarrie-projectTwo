@@ -411,15 +411,35 @@ header.contactHeader .contactTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-header.contactHeader .contactTitle h1 {
+  font-size: calc(3rem + 2vw);
   color: white;
-  font-size: 83.2px;
 }
 
 header.blogHeader {
   background-image: url(../../bar-final-assets/blog-header-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+header.blogHeader div.wrapper {
+  height: 100%;
+}
+
+header.blogHeader .blogTitle {
+  height: calc(60vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(3rem + 2vw);
+  color: white;
 }
 
 .linkSection {
@@ -682,12 +702,13 @@ header.blogHeader {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
 }
 
 .contactMain .form input[type=text],
@@ -695,6 +716,7 @@ header.blogHeader {
 .contactMain .form textarea {
   background-color: #220303;
   font-family: 'Chathura', sans-serif;
+  border: none;
   color: white;
   font-size: calc(2rem + 1vw);
 }
@@ -702,16 +724,140 @@ header.blogHeader {
 .contactMain .form input[type=text],
 .contactMain .form input[type=email] {
   width: 45%;
-  border: none;
   border-bottom: 1px white solid;
   color: white;
 }
 
 .contactMain .form textarea {
-  width: 90%;
-  border: none;
+  width: calc(100% - 60px);
+  height: 35vh;
   border: 1px white solid;
-  text-align: center;
+  margin-top: 30px;
+}
+
+.blogFullPage {
+  background-color: #1a1a1a;
+}
+
+.blogFullPage aside {
+  float: left;
+  margin: 5% 3%;
+  padding: 20px 5px;
+  width: 20%;
+  background-color: #220303;
+  color: white;
+  text-align: left;
+}
+
+.blogFullPage aside h2 {
+  font-size: calc(2.5rem + 1.5vw);
+}
+
+.blogFullPage aside p {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.blogFullPage aside a {
+  color: #FF8327;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.blogFullPage aside img {
+  position: relative;
+  width: 120%;
+  left: -50px;
+  top: -30px;
+}
+
+.blogFullPage aside ul {
+  list-style: disc inside;
+}
+
+.blogFullPage .blogMain {
+  width: 70%;
+  color: white;
+}
+
+.blogFullPage .blogMain img {
+  display: relative;
+  left: -15px;
+  -webkit-box-shadow: -15px 15px #FF8327;
+          box-shadow: -15px 15px #FF8327;
+}
+
+.blogFullPage .blogMain .newMenu {
+  border-left: 5px solid #FF8327;
+  border-bottom: 5px solid #FF8327;
+  padding: 50px;
+}
+
+.blogFullPage .blogMain .newMenu h3 {
+  color: #FF8327;
+}
+
+.blogFullPage .commentSection {
+  color: white;
+  padding: 50px;
+}
+
+.blogFullPage .commentSection img {
+  width: 100px;
+}
+
+.blogFullPage .commentSection .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.blogFullPage .commentSection .comment div {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.blogFullPage .commentSection .comment div h3 {
+  color: #FF8327;
+  line-height: 80%;
+}
+
+.blogFullPage .commentSection .leaveaComment form {
+  height: 400px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blogFullPage .commentSection .leaveaComment form input[type=text],
+.blogFullPage .commentSection .leaveaComment form input[type=email],
+.blogFullPage .commentSection .leaveaComment form textarea {
+  background-color: #1a1a1a;
+  font-family: 'Chathura', sans-serif;
+  border: none;
+  color: white;
+  font-size: calc(2rem + 1vw);
+}
+
+.blogFullPage .commentSection .leaveaComment form input[type=text],
+.blogFullPage .commentSection .leaveaComment form input[type=email] {
+  width: 45%;
+  border-bottom: 1px #FF8327 solid;
+  color: white;
+}
+
+.blogFullPage .commentSection .leaveaComment form textarea {
+  width: calc(100% - 60px);
+  height: 35vh;
+  border: 1px #FF8327 solid;
   margin-top: 30px;
 }
 
@@ -725,6 +871,7 @@ footer {
 
 footer p {
   font-size: calc(1.6rem + 0.8vw);
+  line-height: 130%;
 }
 
 /* Portrait tablet and small desktops */
