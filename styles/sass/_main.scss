@@ -63,19 +63,27 @@
     }
     .checkerText p {
         margin-top: 0;
-        text-align: left;
+    }
+    .leftText {
+        h2, 
+        .readMore {
+            align-self: flex-end;
+        }
     }
 }
-
+// ------------------------------BUTTONS
 .readMore {
-    color: white;
     background-color: #BF2603;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Tulpen One', cursive;
+    padding: 5px 0;
+    margin: 20px 0;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    margin: 20px 0;
+
 }
 .party .readMore {
     width: 120px;
@@ -88,6 +96,8 @@
     margin: 20px auto;
 }
 
+
+// ------------------------------END BUTTONS
 .hostaParty {
     background-color: #111010;
     color: white;
@@ -96,8 +106,16 @@
     flex-direction: column;
     align-content: center;
     padding: 70px 0;
-    .party a {
-        margin: 20px auto;
+    .party {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin: 20px auto;
+        }
+        p {
+            width: 70%;
+            align-self: center;
+        }
     }
     img {
         margin: 40px auto;
@@ -201,16 +219,19 @@
     }
 }
 
+
+// BLOG
 .blogFullPage {
     background-color: rgb(26, 26, 26);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     aside {
-        float: left;
-        margin: 5% 3%;
-        padding: 20px 5px;
-        width: 20%;
         background-color: #220303;
         color: white;
         text-align: left;
+        margin: 30% 3% 0 10%;
+        padding: 20px 5px;
+        height: 35%;
         h2 {
             font-size: calc(2.5rem + 1.5vw);
         }
@@ -231,14 +252,17 @@
             list-style: disc inside;
         }
     }
+
+    img.blogTop {
+        box-shadow: -30px 30px #FF8327;
+        width: 65vw;
+        position: relative;
+        right: -40px;
+        top: -100px;
+    }
+
     .blogMain {
-        width: 70%;
         color: white;
-        img {
-            display: relative;
-            left: -15px;
-            box-shadow: -15px 15px #FF8327;
-        }
         .newMenu {
             border-left: 5px solid #FF8327;
             border-bottom: 5px solid #FF8327;
@@ -254,46 +278,47 @@
         padding: 50px;
         img {
             width: 100px;
+            height: 100px;
             // padding: 10px;
         }
         .comment {
             display: flex;
             padding: 30px;
             div {
-                width: 60%;
+                width: 80%;
                 padding-left: 20px;
                 h3 {
                     color: #FF8327;
-                    line-height: 80%;
+                    line-height: 70%;
                 }
             }
         }
         .leaveaComment {
             form {
                 height: 400px;
-                width: 70%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
+                padding: 0 50px;
                 input[type=text],
                 input[type=email],
                 textarea {
                     background-color: rgb(26, 26, 26);
-
                     font-family: 'Chathura', sans-serif;    
                     border: none;
                     color: white;
                     font-size: calc(2rem + 1vw);
                 }
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;  
+                }
                 input[type=text],
                 input[type=email] {
-                    width: 45%;
                     border-bottom: 1px #FF8327 solid;
                     color: white;
+                    width: 48%;
                 }
                 textarea {
-                    width: calc(100% - 60px);  
+                    width: 100%;  
                     height: 35vh;
                     border: 1px #FF8327 solid;
                     margin-top: 30px;
