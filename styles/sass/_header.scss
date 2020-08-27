@@ -30,6 +30,10 @@ header.index {
     }
     .h1h2 {
         z-index: 5;
+        transition: transform 1s;
+    }
+    .h1h2:hover {
+        transform: rotate(360deg);
     }
     .imgContainer {
         width: 100%;

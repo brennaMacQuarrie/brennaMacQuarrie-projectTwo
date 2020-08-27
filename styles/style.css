@@ -286,6 +286,10 @@ p {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 header.index {
   background-image: url(../../bar-final-assets/home-image-1.jpg);
   background-position: center;
@@ -339,6 +343,15 @@ header.index h2 {
 
 header.index .h1h2 {
   z-index: 5;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+header.index .h1h2:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 header.index .imgContainer {
@@ -501,7 +514,17 @@ header.blogHeader .blogTitle {
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  margin-top: 10px;
+  margin-top: 7px;
+}
+
+.linkSection .favi:hover {
+  background-color: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.linkSection .favi:hover .fas {
+  color: #BF2603;
 }
 
 .linkSection .fas {
@@ -570,9 +593,9 @@ header.blogHeader .blogTitle {
 .readMore {
   background-color: #BF2603;
   color: white;
+  border: 4px double transparent;
   font-size: 3rem;
   font-family: 'Tulpen One', cursive;
-  padding: 5px 0;
   margin: 20px 0;
   width: 100px;
   display: -webkit-box;
@@ -588,10 +611,17 @@ header.blogHeader .blogTitle {
 
 .party .readMore {
   width: 120px;
+  border: 4px double transparent;
+}
+
+.readMore:hover {
+  background-color: white;
+  color: #BF2603;
+  border: 4px double #BF2603;
 }
 
 .formButton {
-  border: none;
+  border: 4px double transparent;
   font-family: 'Tulpen One', cursive;
   width: 90%;
   margin: 20px auto;
@@ -648,7 +678,6 @@ header.blogHeader .blogTitle {
 }
 
 .hostaParty .events div {
-  width: 70%;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,10 +689,12 @@ header.blogHeader .blogTitle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 30px;
 }
 
 .hostaParty .events img {
-  width: 25%;
+  width: 250px;
+  height: 250px;
   -webkit-box-shadow: #FF8327 10px 10px;
           box-shadow: #FF8327 10px 10px;
   margin: 0;
@@ -817,10 +848,11 @@ header.blogHeader .blogTitle {
 
 .blogFullPage aside ul li::before {
   content: "•";
-  color: #FF8327;
+  -webkit-transform: scaleX(5);
+          transform: scaleX(5);
+  color: #BF2603;
   display: inline-block;
-  font-size: 2rem;
-  width: 10px;
+  font-size: 3rem;
   height: 10px;
 }
 
@@ -1110,6 +1142,25 @@ footer p {
   }
   .gallery ul li:last-child {
     display: none;
+  }
+  .blogFullPage .blogWrap .blogMain .newMenu {
+    padding: 30px;
+  }
+  .blogFullPage .blogWrap .commentSection {
+    padding: 30px 0;
+  }
+  .blogFullPage .blogWrap.commentSection form input[type=text],
+  .blogFullPage .blogWrap.commentSection form input[type=email],
+  .contactMain .form input[type=text],
+  .contactMain .form input[type=email] {
+    width: 100%;
+  }
+  .blogFullPage .blogWrap.commentSection form div,
+  .contactMain .form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
