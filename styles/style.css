@@ -374,24 +374,25 @@ header .navTop ul {
   height: 90px;
 }
 
-header .navTop a,
-header .navTop p {
+header .navTop ul a,
+header .navTop ul p {
   color: white;
   padding: 0 30px;
   margin: 20px 5px;
 }
 
-header .navTop p {
+header .navTop ul p {
   font-size: 60px;
+  min-width: 150px;
   font-family: 'Tulpen One', cursive;
 }
 
-header .navTop a {
+header .navTop ul a {
   font-size: 40px;
 }
 
-header .navTop a:hover,
-header .navTop a:focus {
+header .navTop ul a:hover,
+header .navTop ul a:focus {
   color: #FF8327;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -808,71 +809,78 @@ header.blogHeader .blogTitle {
   top: -30px;
 }
 
-.blogFullPage aside ul li::before {
-  content: "•";
-  color: #FF8327;
-  display: inline-block;
-  margin-left: -1rem;
+.blogFullPage aside ul li {
+  padding-left: 5px;
 }
 
-.blogFullPage img.blogTop {
+.blogFullPage aside ul li::before {
+  content: "•";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.blogFullPage .blogWrap {
+  position: relative;
+  top: -100px;
+  right: 0;
+  color: white;
+}
+
+.blogFullPage .blogWrap .blogMain img.blogTop {
   -webkit-box-shadow: -30px 30px #FF8327;
           box-shadow: -30px 30px #FF8327;
   width: 65vw;
   position: relative;
-  right: -40px;
-  top: -100px;
+  right: -30px;
 }
 
-.blogFullPage .blogMain {
-  color: white;
-}
-
-.blogFullPage .blogMain .newMenu {
+.blogFullPage .blogWrap .blogMain .newMenu {
   border-left: 5px solid #FF8327;
   border-bottom: 5px solid #FF8327;
   padding: 60px;
 }
 
-.blogFullPage .blogMain .newMenu h3 {
+.blogFullPage .blogWrap .blogMain .newMenu h3 {
   color: #FF8327;
 }
 
-.blogFullPage .commentSection {
+.blogFullPage .blogWrap .commentSection {
   color: white;
   padding: 50px;
 }
 
-.blogFullPage .commentSection img {
+.blogFullPage .blogWrap .commentSection img {
   width: 100px;
   height: 100px;
 }
 
-.blogFullPage .commentSection .comment {
+.blogFullPage .blogWrap .commentSection .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 30px;
 }
 
-.blogFullPage .commentSection .comment div {
+.blogFullPage .blogWrap .commentSection .comment div {
   width: 80%;
   padding-left: 20px;
 }
 
-.blogFullPage .commentSection .comment div h3 {
+.blogFullPage .blogWrap .commentSection .comment div h3 {
   color: #FF8327;
   line-height: 70%;
 }
 
-.blogFullPage .commentSection form {
+.blogFullPage .blogWrap .commentSection form {
   height: 400px;
   padding: 0 50px;
 }
 
-.blogFullPage .commentSection form input[type=text],
-.blogFullPage .commentSection form input[type=email],
-.blogFullPage .commentSection form textarea {
+.blogFullPage .blogWrap .commentSection form input[type=text],
+.blogFullPage .blogWrap .commentSection form input[type=email],
+.blogFullPage .blogWrap .commentSection form textarea {
   background-color: #1a1a1a;
   font-family: 'Chathura', sans-serif;
   border: none;
@@ -881,7 +889,7 @@ header.blogHeader .blogTitle {
   padding-left: 10px;
 }
 
-.blogFullPage .commentSection form div {
+.blogFullPage .blogWrap .commentSection form div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,21 +899,21 @@ header.blogHeader .blogTitle {
           justify-content: space-between;
 }
 
-.blogFullPage .commentSection form input[type=text],
-.blogFullPage .commentSection form input[type=email] {
+.blogFullPage .blogWrap .commentSection form input[type=text],
+.blogFullPage .blogWrap .commentSection form input[type=email] {
   border-bottom: 1px #FF8327 solid;
   color: white;
   width: 48%;
 }
 
-.blogFullPage .commentSection form textarea {
+.blogFullPage .blogWrap .commentSection form textarea {
   width: 100%;
   height: 35vh;
   border: 1px #FF8327 solid;
   margin-top: 30px;
 }
 
-.blogFullPage .commentSection form button {
+.blogFullPage .blogWrap .commentSection form button {
   width: 100%;
 }
 
