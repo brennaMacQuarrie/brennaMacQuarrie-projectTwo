@@ -451,6 +451,13 @@ header.blogHeader .blogTitle {
   color: white;
 }
 
+.burger {
+  display: none;
+  font-size: 4rem;
+  padding-top: 40px;
+  color: white;
+}
+
 .linkSection {
   background-color: #111010;
   color: white;
@@ -947,6 +954,17 @@ footer p {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  header .navTop {
+    display: none;
+  }
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .checker {
     display: -webkit-box;
     display: -ms-flexbox;

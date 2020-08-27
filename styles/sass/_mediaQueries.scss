@@ -15,10 +15,14 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    // header .navTop {
-    //     display: none;
-    // }
+    header .navTop {
+        display: none;
+    }
     // BUILD HAMBURGER HERE PLEASE
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+    }
     .checker {
         display: flex;
         flex-direction: column;
