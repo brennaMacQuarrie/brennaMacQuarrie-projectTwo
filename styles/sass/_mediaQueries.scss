@@ -1,11 +1,137 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+    header.index {
+        .imgContainer {
+            display: none;
+        }
+    }
+    .blogFullPage {
+        grid-template-columns: 2fr .3fr 5fr;
+    }
+    .contactMain .form {
+        top: -80px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    // header .navTop {
+    //     display: none;
+    // }
+    // BUILD HAMBURGER HERE PLEASE
+    .checker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .gridLeft {
+            align-items: center;
+            img {
+                position: static;
+                align-self: center;
+                width: 90%;
+            }
+        }
+        .gridRight {
+            align-items: center;
+            padding-top: 20px;
+            img.chkImgTwo {
+                position: relative;
+                bottom: 0;
+                align-self: center;
+                width: 90%;
+                order: -1;
+            }
+            h2 {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .contactMain {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        .form {
+            top: 0;
+            right: 15px;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        .contact {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            .socials {
+                margin-top: 50px;
+                width: 100%;
+                .contactFavis {
+                    width: 50%;
+                    margin: 30px auto;
+                }
+            }
+        }
+    }
+
+    .blogFullPage {
+        grid-template-columns: 1fr;
+        aside {
+            display: none;
+        }
+        .blogWrap {
+            width: 85%;
+            margin: 0 auto;
+            top: -100px;
+            .blogMain img.blogTop {
+                width: 100%;
+                box-shadow: -30px 30px #FF8327;
+
+            }
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .linkSection {
+        padding: 20px 0;
+        div.wrapper {
+            display: flex;
+            flex-direction: column;
+            .link {
+                width: 100%;
+            }
+        }
+    }
+    .readMore {
+        font-size: 2.4rem;
+        padding: 3px 0;
+    }
+    section.hostaParty {
+        padding: 20px 0;
+        .events {
+            flex-direction: column;
+            div, img {
+                width: 70%;
+                align-self: center;
+                margin: 10px auto;
+                h2, a {
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .gallery {
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        ul li {
+            width: 45%;
+        }
+        ul li:last-child {
+            display: none;
+        }
+    }
+
 }
