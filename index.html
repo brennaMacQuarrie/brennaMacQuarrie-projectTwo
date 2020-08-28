@@ -6,7 +6,9 @@
     <title>Bar-One Home</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
-    
+
+    <link type="image/png" href="images/favicon.png" rel="icon">
+
     <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,21 +43,18 @@
         <section class="linkSection">
             <div class="wrapper">
                 <div class="link">
-                    <div class="favi">
-                        <a href="#" class="fas fa-home"></a>
+                    <div aria-hidden="true" class="favi">
+                        <!-- i wasnt sure if these should be links or just images. I chose not to make them links  -->
+                        <a aria-hidden="true" class="fas fa-home"></a>
                     </div>
-                    <!-- <span class="fa-stack fa-lg">
-                        <i class="fas fa-circle fa-stack-lg"></i>
-                        <i class="fas fa-home fa-stack-sm fa-inverse"></i>
-                    </span> -->
                     <div class="linkText">
                         <h3>New Space</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos esse cupiditate assumenda. Quam rerum saepe voluptates fugiat cupiditate.</p>
                     </div>
                 </div>
-                <div class="link">
+                <div class="link" >
                     <div class="favi">
-                        <a href="#" class="fas fa-users"></a>
+                        <a aria-hidden="true" class="fas fa-users"></a>
                     </div>
                     <div class="linkText">
                         <h3>Community</h3>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="link">
                     <div class="favi">
-                        <a href="./blog.html" target="_parent" class="fas fa-file"></a>
+                        <a aria-hidden="true" class="fas fa-file"></a>
                     </div>
                     <div class="linkText">
                         <h3>Blog</h3>
@@ -73,7 +72,7 @@
                 </div>
                 <div class="link">
                     <div class="favi">
-                        <a href="./contact.html" target="_parent" class="fas fa-phone"></a>
+                        <a aria-hidden="true" class="fas fa-phone"></a>
                     </div>
                     <div class="linkText">
                         <h3>Get in Touch</h3>
@@ -84,25 +83,21 @@
         </section>
 
         <section class="checker">
-            <!-- <div class="wrapper"> -->
-                <div class="gridLeft">
-                    <img class="chkImgOne" src="./bar-final-assets/left-image.jpg" alt="a bar strung with lots of halogen bulbs hanging down.">
+            <div class="gridLeft">
+                <img class="chkImgOne" src="./bar-final-assets/left-image.jpg" alt="a bar strung with lots of halogen bulbs hanging down.">
 
-                    <h2>Plan ahead</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ea eligendi facere accusamus ratione ipsam, cum ad, deleniti rerum iusto, doloribus illo beatae ut ullam animi rem odio error perspiciatis.</p>
-                    <a class="readMore" href="#">Read More</a>
-                </div>
-                <div class="space"></div>
-                <div class="gridRight">
-                    <h2>New locations</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ea eligendi facere accusamus ratione ipsam, cum
-                    ad, deleniti rerum iusto, doloribus illo beatae ut ullam animi rem odio error perspiciatis.</p>
-                    <a class="readMore" href="#">Read More</a>
-                    <img class="chkImgTwo" src="./bar-final-assets/right-image.jpg" alt="a view of the bottom of the same bar, where the red and blue barstools are lined up under the wood.">
-                    
-                </div>
-                    
-            <!-- </div> -->
+                <h2>Plan ahead</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ea eligendi facere accusamus ratione ipsam, cum ad, deleniti rerum iusto, doloribus illo beatae ut ullam animi rem odio error perspiciatis.</p>
+                <a class="readMore" href="#">Read More</a>
+            </div>
+            <div class="space"></div>
+            <div class="gridRight">
+                <h2>New locations</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ea eligendi facere accusamus ratione ipsam, cum
+                ad, deleniti rerum iusto, doloribus illo beatae ut ullam animi rem odio error perspiciatis.</p>
+                <a class="readMore" href="#">Read More</a>
+                <img class="chkImgTwo" src="./bar-final-assets/right-image.jpg" alt="a view of the bottom of the same bar, where the red and blue barstools are lined up under the wood.">
+            </div>
         </section>
 
         <section class="hostaParty">

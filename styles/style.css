@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -468,7 +467,7 @@ header.blogHeader .blogTitle {
 .contactMain .wrapper .form {
   width: 70%;
   height: 500px;
-  padding: 30px;
+  padding: 35px;
   position: relative;
   top: -120px;
   right: -50px;
@@ -615,7 +614,6 @@ header.blogHeader .blogTitle {
   transition: 1s -webkit-transform;
   transition: 1s transform;
   transition: 1s transform, 1s -webkit-transform;
-  cursor: pointer;
 }
 
 .linkSection .favi:hover {
@@ -871,26 +869,37 @@ header.blogHeader .blogTitle {
   margin: 20px 0;
 }
 
+.contactMain .contact .socials .contactFavis .fab {
+  color: white;
+}
+
+.contactMain .contact .socials .contactFavis .fab:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .contactMain .contact .contactInfo {
   margin-top: 30px;
 }
 
 .blogFullPage {
   background-color: #1a1a1a;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2.3fr 1fr 6fr;
-      grid-template-columns: 2.3fr 1fr 6fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blogFullPage aside {
   background-color: #220303;
   color: white;
   text-align: left;
-  margin-left: 10%;
-  margin-top: 50px;
+  margin: 50px 100px 0 30px;
   padding: 0 20px;
-  height: 32%;
+  height: 75vh;
+  width: 800px;
 }
 
 .blogFullPage aside h2 {
@@ -908,36 +917,29 @@ header.blogHeader .blogTitle {
 
 .blogFullPage aside img {
   position: relative;
-  width: 120%;
   left: -50px;
   top: -30px;
 }
 
 .blogFullPage aside ul li::before {
-  content: "•";
-  -webkit-transform: scaleX(5);
-          transform: scaleX(5);
+  content: "\2022";
+  -webkit-transform: scaleX(6);
+          transform: scaleX(6);
   color: #BF2603;
   display: inline-block;
   font-size: 3rem;
   height: 10px;
 }
 
-.blogFullPage aside ul li p {
-  display: inline-block;
-}
-
 .blogFullPage .blogWrap {
   position: relative;
   top: -150px;
-  right: 10px;
   color: white;
 }
 
 .blogFullPage .blogWrap .blogMain img.blogTop {
   -webkit-box-shadow: -30px 30px #FF8327;
           box-shadow: -30px 30px #FF8327;
-  width: 65vw;
   position: relative;
   right: -30px;
 }
