@@ -1081,24 +1081,26 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .contactMain .form {
-    top: 0;
-    right: 15px;
+  .contactMain .wrapper .form {
+    position: static;
     margin-bottom: 50px;
     width: 100%;
   }
-  .contactMain .contact {
+  .contactMain .wrapper .contact {
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
   }
-  .contactMain .contact .socials {
+  .contactMain .wrapper .contact .socials {
     margin-top: 50px;
     width: 100%;
   }
-  .contactMain .contact .socials .contactFavis {
+  .contactMain .wrapper .contact .socials .contactFavis {
     width: 50%;
     margin: 30px auto;
+  }
+  .contactMain .wrapper .contact .contactInfo {
+    margin: 30px;
   }
   .blogFullPage {
     -ms-grid-columns: 1fr;

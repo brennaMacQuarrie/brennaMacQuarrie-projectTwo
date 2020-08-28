@@ -61,23 +61,25 @@
         .wrapper {
             flex-direction: column;
             align-items: center;
-        }
-        .form {
-            top: 0;
-            right: 15px;
-            margin-bottom: 50px;
-            width: 100%;
-        }
-        .contact {
-            width: 100%;
-            text-align: center;
-            padding-bottom: 20px;
-            .socials {
-                margin-top: 50px;
+            .form {
+                position: static;
+                margin-bottom: 50px;
                 width: 100%;
-                .contactFavis {
-                    width: 50%;
-                    margin: 30px auto;
+            }
+            .contact {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+                .socials {
+                    margin-top: 50px;
+                    width: 100%;
+                    .contactFavis {
+                        width: 50%;
+                        margin: 30px auto;
+                    }
+                }
+                .contactInfo {
+                    margin: 30px;
                 }
             }
         }
