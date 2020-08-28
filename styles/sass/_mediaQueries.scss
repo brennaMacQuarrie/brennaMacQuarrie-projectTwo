@@ -90,6 +90,14 @@
         aside {
             display: none;
         }
+            .blogFullPage .blogWrap {
+        .blogMain .newMenu {
+            padding: 20px;
+        } 
+        .commentSection {
+            padding: 30px 0;
+        }
+    }
         .blogWrap {
             width: 85%;
             margin: 0 auto;
@@ -145,22 +153,17 @@
             display: none;
         }
     }
-    .blogFullPage .blogWrap {
-        .blogMain .newMenu {
-            padding: 30px;
-        } 
-        .commentSection {
-            padding: 30px 0;
-        }
-    }
-    .blogFullPage .blogWrap   .commentSection form,
-    .contactMain .form {
+
+    .blogFullPage .blogWrap .commentSection form,
+    .contactMain .wrapper .form {
         input[type=text],
         input[type=email] {
+            padding-top: 0;
             width: 100%;
         }
         div {
             flex-direction: column;
         }
     }
+
 }
