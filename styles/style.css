@@ -935,13 +935,18 @@ header.blogHeader .blogTitle {
   position: relative;
   top: -150px;
   color: white;
+  padding: 30px 0 30px 30px;
 }
 
-.blogFullPage .blogWrap .blogMain img.blogTop {
+.blogFullPage .blogWrap .blogMain .imgDiv {
+  padding: 30px 0 30px 30px;
+}
+
+.blogFullPage .blogWrap .blogMain .imgDiv img.blogTop {
   -webkit-box-shadow: -30px 30px #FF8327;
           box-shadow: -30px 30px #FF8327;
   position: relative;
-  right: -30px;
+  bottom: -5px;
 }
 
 .blogFullPage .blogWrap .blogMain .newMenu {
