@@ -31,13 +31,16 @@
         width: 35px;
         height: 35px;
         margin-top: 7px;
+        transition: 1s transform;
+        cursor: pointer;
     }
     .favi:hover {
         background-color: white;
         .fas {
             color: #BF2603;
+            transform: rotate(360deg);
         }
-        transform: scale(1.3);
+        transform: rotate(360deg);
     }
     .fas {
         color: white;
@@ -57,6 +60,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        p {
+            margin-left: 30px;
+        }
         img.chkImgOne {
             box-shadow: #FF8327 15px 15px;
             position: relative;
@@ -67,6 +73,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        p {
+            margin-right: 30px;
+        }
         img.chkImgTwo {
             box-shadow: #FF8327 -15px 15px;
             position: relative;
@@ -164,6 +173,10 @@
     }
     ul li {
         width: 30%;
+        transition: 0.5s transform;
+    }
+    ul li:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -208,14 +221,12 @@
         input[type=text],
         input[type=email],
         textarea {
+            color: white;
             background-color: #220303;
             font-family: 'Chathura', sans-serif;    
             border: none;
-            color: white;
             font-size: calc(2rem + 1vw);
-            text-align: left;
             padding-left: 10px;
-
         }
         div {
             width: 100%;
@@ -225,7 +236,6 @@
         input[type=text],
         input[type=email] {
             border-bottom: 1px white solid;
-            color: white;
             width: 48%;
         }
         textarea {
@@ -233,7 +243,7 @@
             height: 35vh;
             border: 1px white solid;
             margin-top: 30px;
-            color: white;
+            resize: none;
         }
         button {
             width: 100%;
@@ -246,15 +256,16 @@
 .blogFullPage {
     background-color: rgb(26, 26, 26);
     display: grid;
-    grid-template-columns: 2fr 1fr 6fr;
+    grid-template-columns: 2.3fr 1fr 6fr;
+
     aside {
         background-color: #220303;
         color: white;
         text-align: left;
         margin-left: 10%;
         margin-top: 50px;
-        padding: 20px 5px;
-        height: 30%;
+        padding: 0 20px;
+        height: 32%;
         h2 {
             font-size: calc(2.5rem + 1.5vw);
         }
@@ -312,7 +323,6 @@
             img {
                 width: 100px;
                 height: 100px;
-                // padding: 10px;
             }
             .comment {
                 display: flex;
@@ -335,8 +345,8 @@
                 textarea {
                     background-color: rgb(26, 26, 26);
                     font-family: 'Chathura', sans-serif;    
-                    border: none;
                     color: white;
+                    border: none;
                     font-size: calc(2rem + 1vw);
                     padding-left: 10px;
                 }
@@ -348,7 +358,6 @@
                 input[type=text],
                 input[type=email] {
                     border-bottom: 1px #FF8327 solid;
-                    color: white;
                     width: 48%;
                 }
                 textarea {
@@ -356,6 +365,7 @@
                     height: 35vh;
                     border: 1px #FF8327 solid;
                     margin-top: 30px;
+                    resize: none;
                 }
                 button {
                     width: 100%;

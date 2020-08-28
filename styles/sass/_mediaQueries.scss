@@ -6,7 +6,7 @@
         }
     }
     .blogFullPage {
-        grid-template-columns: 2fr .3fr 5fr;
+        grid-template-columns: 2fr .5fr 5fr;
     }
     .contactMain .form {
         top: -80px;
@@ -29,6 +29,9 @@
         align-items: center;
         .gridLeft {
             align-items: center;
+            p {
+            text-align: center;
+            }
             img {
                 position: static;
                 align-self: center;
@@ -38,6 +41,9 @@
         .gridRight {
             align-items: center;
             padding-top: 20px;
+            p {
+                text-align: center;
+            }
             img.chkImgTwo {
                 position: relative;
                 bottom: 0;
